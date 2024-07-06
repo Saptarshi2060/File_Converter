@@ -28,7 +28,6 @@ python app.py
 
 ### Technologies Used
 
-```bash
 Python: Flask framework for backend development.
 Libraries: pdf2docx, docx2pdf, Pillow (PIL), pandas for file handling and conversions.
 
