@@ -28,16 +28,18 @@ pip install -r requirements.txt
 # Run the application
 python app.py
 
-# Usage
+## **Usage**
 
-Open your web browser and navigate to `http://127.0.0.1:5000`.
+<small>Open your web browser and navigate to `http://127.0.0.1:5000`.</small>
 
-Use the interface to choose a file and select the desired conversion or size adjustment operation.
+<small>Use the interface to choose a file and select the desired conversion or size adjustment operation.</small>
 
-Download the converted or adjusted file from the provided link.
+<small>Download the converted or adjusted file from the provided link.</small>
 
-## Technologies Used
+## **Technologies Used**
 
-- **Python**: Flask framework for backend development.
-- **Libraries**: pdf2docx, docx2pdf, Pillow (PIL), pandas for file handling and conversions.
-- **Frontend**: HTML, CSS, and JavaScript for the user interface.
+<small>- **Python**: Flask framework for backend development.</small>
+
+<small>- **Libraries**: pdf2docx, docx2pdf, Pillow (PIL), pandas for file handling and conversions.</small>
+
+<small>- **Frontend**: HTML, CSS, and JavaScript for the user interface.</small>
