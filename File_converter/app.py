@@ -16,6 +16,35 @@ if not os.path.exists('uploads'):
 def index():
     return render_template('index.html')
 
+# Increase file size (Placeholder)
+@app.route('/increase-file-size', methods=['POST'])
+def increase_file_size():
+    file = request.files['file']
+    file_path = os.path.join('uploads', file.filename)
+    file.save(file_path)
+
+    # Placeholder logic to increase file size
+    with open(file_path, 'ab') as f:
+        f.write(b'\0' * 1024 * 1024)  # Add 1 MB of null bytes
+
+    return send_file(file_path, as_attachment=True)
+
+# Decrease file size (Placeholder)
+@app.route('/decrease-file-size', methods=['POST'])
+def decrease_file_size():
+    file = request.files['file']
+    file_path = os.path.join('uploads', file.filename)
+    file.save(file_path)
+
+    # Placeholder logic to decrease file size
+    new_file_path = file_path + '_decreased'
+    with open(file_path, 'rb') as f:
+        data = f.read()
+    with open(new_file_path, 'wb') as f:
+        f.write(data[:len(data)//2])  # Reduce file size by half
+
+    return send_file(new_file_path, as_attachment=True)
+
 # PDF to Word
 @app.route('/pdf-to-word', methods=['POST'])
 def pdf_to_word():
