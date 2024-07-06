@@ -1,0 +1,91 @@
+body {
+    background-color: #141414;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.netflix-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #E50914, #221F1F);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+    transform: perspective(1000px) rotateX(10deg);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.file-label {
+    display: block;
+    margin: 0 auto 20px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #444444;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.file-label:hover {
+    transform: scale(1.05);
+}
+
+.file-input {
+    display: none;
+}
+
+.options-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    background-color: #E50914;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="netflix-container">
+        <div class="container">
+            <h1>File Converter</h1>
+            <div class="options-section">
+                <button onclick="convertFile('pdf-to-word')">PDF to Word</button>
+                <button onclick="convertFile('word-to-pdf')">Word to PDF</button>
+                <button onclick="convertFile('img-to-pdf')">Image to PDF</button>
+                <button onclick="convertFile('pdf-to-img')">PDF to Image</button>
+                <button onclick="convertFile('excel-to-df')">Excel to DataFrame</button>
+                <button onclick="convertFile('df-to-excel')">DataFrame to Excel</button>
+            </div>
+            <div class="upload-section">
+                <label for="fileInput" class="file-label">Choose File</label>
+                <input type="file" id="fileInput" class="file-input">
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
